@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Da Introdução Alimentar à Mesa da Família | Dr. Daniel Caldas</title>
+<meta name="description" content="Livro de introdução alimentar dos 6 aos 24 meses, escrito pelo Dr. Daniel Caldas, pediatra (CRM-GO 12.195 · RQE 8.175).">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+/* Marinho + dourado da edição de luxo; títulos na Libre Caslon (a mesma do logo), sem itálico */
+:root{
+  --nv:#0E2240; --nv2:#16325C; --nv3:#081630; --ou:#B8924A; --ou2:#D9BC7C; --ouc:#F7F1E3; --tx:#26303D; --suave:#5C6675; --linha:#E2E6EE;
+  --ouro:linear-gradient(120deg,#A87C34 0%,#E9CF8E 28%,#B8924A 52%,#F1DCA2 74%,#A0752E 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Lato,system-ui,sans-serif;color:var(--tx);background:#fff;line-height:1.7;font-size:17px;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Libre Caslon Text",Georgia,serif;font-weight:400;line-height:1.2;color:var(--nv)}
+h2{font-size:clamp(28px,3.6vw,38px);margin-bottom:14px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:88px 0;position:relative}
+.lead{color:var(--suave);max-width:640px;margin-bottom:44px;font-size:18px}
+.rotulo{display:block;font-size:12px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--ou);margin-bottom:12px}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--nv3);background:var(--ouro);padding:20px 38px;border-radius:2px;text-decoration:none;
+  box-shadow:0 10px 26px rgba(184,146,74,.35);transition:transform .2s, box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(184,146,74,.45)}
+.btn-mini{font-size:12px;padding:12px 20px;box-shadow:none}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:20;background:rgba(14,34,64,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(217,188,124,.35)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.marca{display:flex;align-items:center;gap:12px;color:var(--ou2);text-decoration:none}
+.marca svg{width:42px;height:auto}
+.marca b{font-family:"Libre Caslon Text",serif;font-size:15px;letter-spacing:.08em;display:block;line-height:1.1;color:#fff}
+.marca span{font-size:10px;letter-spacing:.16em;color:var(--ou2)}
+
+/* hero */
+.hero{background:radial-gradient(120% 120% at 50% 0%,var(--nv2) 0%,var(--nv) 55%,var(--nv3) 100%);color:#fff;padding:80px 0 90px;overflow:hidden}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--ouro)}
+.hero .wrap{text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero .rotulo{color:var(--ou2)}
+.hero h1{font-size:clamp(34px,5vw,58px);color:#fff;margin:0 0 18px;max-width:860px}
+.hero h1 span{color:var(--ou2)}
+.hero p.sub{font-size:19px;color:#D3DBE8;max-width:640px;margin-bottom:38px}
+.vsl{width:100%;max-width:880px;aspect-ratio:16/9;margin:0 auto 40px;border:1px solid var(--ou2);padding:10px;background:rgba(255,255,255,.03);box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.vsl iframe,.vsl video{width:100%;height:100%;border:0;display:block}
+.vsl-vazio{width:100%;height:100%;background:radial-gradient(circle at 50% 45%,#1B3A68,var(--nv3));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.vsl-vazio .play{width:84px;height:84px;border-radius:50%;background:var(--ouro);position:relative;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.vsl-vazio .play:after{content:"";position:absolute;left:34px;top:26px;border-left:24px solid var(--nv3);border-top:16px solid transparent;border-bottom:16px solid transparent}
+.vsl-vazio small{font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--ou2)}
+.ficha{margin-top:28px;font-size:14px;color:#AFC0D8}
+.ficha b{color:#fff}
+
+/* perguntas */
+.perguntas .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.balao{list-style:none}
+.balao li{font-family:"Libre Caslon Text",serif;font-size:19px;color:var(--nv);padding:14px 0;border-bottom:1px solid var(--linha)}
+.balao li:first-child{border-top:1px solid var(--linha)}
+.perguntas p{color:var(--suave);margin-bottom:14px}
+.perguntas p b{color:var(--tx)}
+
+/* kit */
+.grid-kit{display:flex;flex-wrap:wrap;gap:34px 26px}
+.grid-kit .item{width:calc(25% - 20px)}
+.item .capa{background:#fff;padding:6px;border:1px solid #E1D2B0;box-shadow:0 10px 24px rgba(14,34,64,.10)}
+.item .capa img{width:100%;aspect-ratio:595/842;object-fit:cover}
+.item h3{font-size:17px;margin:14px 0 2px}
+.item p{font-size:14px;color:var(--suave);line-height:1.45}
+.item .pg{display:block;margin-top:4px;font-size:12px;font-weight:700;color:var(--ou)}
+
+/* autor */
+.sobre .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.foto-dr{aspect-ratio:4/5;background:linear-gradient(170deg,var(--nv2),var(--nv));display:grid;place-items:center;
+  color:var(--ou2);font-size:13px;letter-spacing:.12em;text-align:center;border:1px solid var(--ou2);outline:1px solid #E1D2B0;outline-offset:8px;margin:9px}
+.foto-dr img{width:100%;height:100%;object-fit:cover}
+.sobre h2{margin-bottom:4px}
+.espec{color:var(--ou);font-weight:700;margin-bottom:20px}
+.credenciais{display:flex;flex-wrap:wrap;gap:8px 28px;margin-bottom:22px;font-size:15px;padding:14px 0;border-top:1px solid var(--linha);border-bottom:1px solid var(--linha)}
+.credenciais b{color:var(--nv)}
+.sobre p{margin-bottom:14px;color:var(--suave)}
+
+/* aviso */
+.aviso{max-width:820px;margin:0 auto;border-left:3px solid var(--ou);padding:6px 0 6px 26px}
+.aviso h3{font-size:22px;margin-bottom:8px}
+.aviso p{color:var(--suave)}
+
+/* oferta */
+.oferta{background:radial-gradient(120% 120% at 50% 0%,var(--nv2) 0%,var(--nv) 60%,var(--nv3) 100%)}
+.caixa{max-width:640px;margin:0 auto;background:#fff;padding:48px 44px;position:relative}
+.caixa:after{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--ouro)}
+.caixa h2{font-size:30px}
+.caixa ul{list-style:none;margin:20px 0 28px}
+.caixa li{padding:9px 0 9px 24px;position:relative;border-bottom:1px solid var(--linha)}
+.caixa li:before{content:"";position:absolute;left:3px;top:19px;width:7px;height:7px;background:var(--ou);transform:rotate(45deg)}
+.preco{text-align:center}
+.preco .de{color:var(--suave);text-decoration:line-through;font-size:16px}
+.preco .por{font-family:"Libre Caslon Text",serif;font-weight:700;font-size:64px;color:var(--nv);line-height:1.1}
+.preco .parc{font-size:15px;color:var(--suave);margin:4px 0 24px}
+.caixa .btn{width:100%}
+.pagto{font-size:13px;color:var(--suave);margin-top:16px;text-align:center}
+.garantia{max-width:640px;margin:34px auto 0;color:#D3DBE8;font-size:15px;text-align:center}
+.garantia b{color:var(--ou2)}
+
+/* faq */
+.faq .wrap{max-width:780px}
+details{border-bottom:1px solid var(--linha)}
+details:first-of-type{border-top:1px solid var(--linha)}
+summary{cursor:pointer;list-style:none;font-family:"Libre Caslon Text",serif;font-size:19px;color:var(--nv);padding:20px 40px 20px 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:4px;top:13px;font-family:Lato;font-size:28px;color:var(--ou);transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 0 22px;color:var(--suave)}
+
+/* rodapé */
+footer{background:var(--nv3);color:#8E9DB5;padding:16px 0;font-size:12px;border-top:2px solid var(--ou)}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:8px 24px;flex-wrap:wrap}
+footer .marca svg{width:28px}
+footer .marca b{font-size:12px}
+footer .marca span{display:none}
+footer p{margin:0;line-height:1.5}
+
+.fixo{display:none}
+
+@media (max-width:900px){
+  section{padding:64px 0}
+  .hero{padding:52px 0 70px}
+  .perguntas .wrap,.sobre .wrap{grid-template-columns:1fr;gap:36px}
+  .grid-kit .item{width:calc(33.33% - 18px)}
+  .foto-dr{max-width:320px;width:calc(100% - 18px)}
+  .topo .btn-mini{display:none}
+  .fixo{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}
+  .fixo .btn{width:100%;padding:16px}
+  footer{padding-bottom:84px}
+  footer .wrap{justify-content:center;text-align:center}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .grid-kit{gap:26px 16px}
+  .grid-kit .item{width:calc(50% - 8px)}
+  .item h3{font-size:16px}
+  .caixa{padding:36px 20px}
+  .preco .por{font-size:52px}
+  .vsl{padding:5px;margin-bottom:30px}
+  .vsl-vazio .play{width:60px;height:60px}.vsl-vazio .play:after{left:24px;top:18px;border-left-width:18px;border-top-width:12px;border-bottom-width:12px}
+  .btn{padding:18px 22px;font-size:14px;letter-spacing:.1em}
+  .balao li{font-size:17px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ AJUSTAR ANTES DE PUBLICAR ============
+  VSL       → trocar o .vsl-vazio pelo <iframe> do player (16:9)
+  CHECKOUT  → trocar todos os href="#CHECKOUT" pelo link da Kiwify/Hotmart
+  PREÇO     → seção .preco (valores de exemplo)
+  FOTO      → colocar img/dr-daniel.jpg e trocar o bloco .foto-dr
+  Sono Tranquilo, Xô Constipação e Método Pequenos Passos ficaram fora: vão como order bump no checkout
+==================================================== -->
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#"><svg viewBox="0 0 2630.000000 2220.000000" aria-hidden="true"><g transform="translate(0.000000,2220.000000) scale(0.100000,-0.100000)"
+fill="currentColor" stroke="none">
+<path d="M17655 21789 c-160 -7 -260 -17 -420 -43 -115 -19 -239 -38 -275 -41
+-123 -11 -215 -27 -355 -60 -77 -18 -194 -40 -261 -49 -67 -9 -166 -28 -220
+-42 -54 -14 -157 -36 -229 -49 -75 -13 -163 -36 -209 -54 -44 -17 -120 -41
+-169 -52 -50 -11 -121 -33 -159 -50 -37 -16 -106 -41 -153 -54 -48 -14 -108
+-36 -135 -50 -27 -14 -84 -34 -127 -46 -43 -12 -103 -34 -133 -49 -31 -16 -89
+-38 -130 -51 -41 -12 -102 -35 -135 -52 -33 -16 -87 -38 -120 -49 -33 -11 -72
+-29 -87 -39 -15 -11 -62 -36 -104 -55 -43 -19 -90 -44 -106 -55 -15 -11 -56
+-32 -91 -46 -34 -14 -75 -35 -92 -47 -16 -11 -66 -40 -110 -62 -246 -127 -278
+-145 -432 -243 -39 -25 -114 -73 -165 -105 -51 -33 -116 -77 -143 -97 -90 -67
+-166 -69 -259 -6 -28 19 -66 42 -85 52 -18 9 -61 35 -96 58 -34 23 -86 56
+-115 72 -83 48 -130 75 -200 116 -36 21 -92 48 -125 60 -33 12 -77 33 -98 46
+-21 13 -70 35 -110 49 -40 15 -94 39 -122 54 -27 15 -84 38 -125 50 -41 12
+-100 35 -130 50 -30 15 -89 38 -130 50 -41 12 -100 35 -131 50 -30 16 -84 36
+-120 45 -35 9 -98 32 -140 51 -42 19 -112 43 -156 54 -44 11 -110 32 -149 48
+-38 16 -105 37 -149 46 -44 10 -127 33 -185 51 -63 20 -164 42 -251 54 -81 11
+-199 34 -264 51 -65 16 -172 37 -239 46 -132 17 -177 25 -276 48 -146 34 -445
+66 -810 86 -102 5 -304 17 -450 27 -385 24 -1110 15 -1442 -17 -54 -6 -142
+-14 -195 -20 -54 -5 -188 -14 -298 -20 -250 -14 -333 -23 -465 -56 -58 -14
+-167 -34 -244 -44 -76 -11 -204 -35 -285 -54 -80 -19 -186 -40 -236 -46 -49
+-6 -151 -27 -225 -46 -74 -19 -192 -44 -263 -55 -76 -11 -161 -32 -206 -49
+-42 -16 -123 -40 -181 -54 -58 -14 -133 -36 -168 -51 -34 -14 -101 -34 -149
+-46 -48 -11 -121 -35 -163 -54 -41 -18 -97 -39 -125 -46 -27 -7 -88 -29 -135
+-49 -47 -21 -112 -46 -144 -55 -33 -9 -89 -31 -125 -50 -36 -18 -93 -40 -126
+-50 -33 -9 -82 -29 -110 -45 -27 -15 -75 -35 -105 -45 -49 -15 -215 -90 -295
+-133 -51 -28 -215 -113 -314 -164 -52 -26 -101 -54 -110 -62 -9 -7 -43 -28
+-76 -46 -33 -18 -73 -43 -90 -55 -16 -12 -50 -32 -75 -45 -25 -12 -67 -37 -95
+-55 -27 -17 -90 -58 -140 -89 -235 -149 -361 -237 -554 -385 -18 -14 -52 -39
+-75 -55 -169 -120 -503 -431 -542 -506 -18 -34 -19 -90 -19 -1397 0 -1362 0
+-1362 23 -1385 23 -23 23 -23 575 -26 584 -3 623 -2 659 27 21 18 23 28 30
+202 10 249 24 367 59 474 15 50 37 134 48 188 11 54 33 128 50 165 17 37 40
+103 51 147 12 44 34 103 49 130 15 28 36 75 46 105 10 30 38 92 61 138 24 46
+44 89 44 96 0 7 18 40 39 73 21 33 49 82 61 109 11 27 36 72 54 99 18 28 45
+70 60 95 15 25 52 79 82 120 30 41 73 102 96 134 95 137 549 607 708 733 151
+120 179 141 267 198 83 55 114 74 237 144 22 13 64 37 91 54 120 74 476 253
+540 272 32 9 85 30 118 46 32 17 97 41 143 55 47 13 113 36 146 50 34 14 101
+34 149 45 49 10 121 32 161 48 91 35 96 36 246 56 67 9 173 29 235 45 110 28
+182 38 422 61 66 6 156 17 200 25 123 22 557 44 880 44 274 0 300 -2 474 -30
+101 -16 258 -36 350 -45 211 -19 223 -21 361 -55 63 -16 160 -36 215 -45 55
+-9 145 -31 200 -50 55 -19 140 -44 188 -55 48 -11 109 -31 136 -44 26 -14 90
+-37 141 -51 51 -14 118 -39 150 -55 31 -16 85 -36 121 -45 66 -17 264 -109
+334 -155 22 -15 69 -41 105 -58 58 -29 124 -65 299 -167 105 -60 228 -142 391
+-257 41 -29 92 -63 113 -76 102 -60 627 -541 663 -607 27 -51 23 -60 -128
+-263 -163 -218 -213 -288 -252 -352 -15 -25 -41 -66 -59 -92 -18 -26 -57 -88
+-87 -138 -30 -50 -70 -115 -89 -143 -18 -29 -43 -72 -54 -97 -11 -25 -32 -63
+-47 -85 -15 -22 -43 -71 -62 -110 -99 -197 -144 -284 -155 -296 -6 -8 -23 -43
+-37 -79 -15 -36 -38 -82 -52 -104 -14 -21 -36 -66 -49 -100 -13 -33 -42 -99
+-64 -145 -23 -47 -41 -92 -41 -100 0 -9 -20 -54 -44 -101 -24 -47 -51 -111
+-60 -142 -9 -31 -31 -87 -50 -125 -18 -37 -39 -90 -46 -118 -7 -27 -28 -82
+-46 -121 -19 -39 -43 -109 -55 -155 -11 -46 -34 -114 -50 -150 -16 -37 -37
+-105 -48 -152 -11 -46 -33 -118 -50 -158 -16 -41 -36 -112 -46 -159 -9 -47
+-33 -127 -51 -179 -19 -52 -43 -144 -54 -206 -11 -61 -33 -156 -50 -211 -17
+-54 -40 -156 -50 -226 -11 -71 -33 -179 -50 -240 -17 -63 -39 -186 -50 -278
+-11 -91 -30 -217 -44 -280 -29 -137 -42 -228 -56 -411 -5 -74 -26 -268 -45
+-430 -53 -447 -61 -688 -46 -1509 12 -713 17 -830 51 -1145 11 -104 27 -283
+35 -397 16 -226 36 -380 66 -528 11 -52 28 -174 39 -271 12 -101 35 -235 54
+-315 19 -76 41 -191 50 -254 9 -64 31 -167 50 -230 18 -63 41 -162 51 -219 9
+-58 30 -142 46 -187 16 -46 38 -127 49 -181 11 -54 34 -133 51 -176 16 -43 39
+-117 50 -164 11 -48 36 -123 54 -167 18 -45 38 -108 45 -141 6 -33 28 -95 47
+-138 19 -43 43 -109 54 -145 10 -37 32 -92 48 -124 17 -31 38 -83 47 -115 9
+-32 36 -96 59 -143 23 -47 48 -103 55 -125 7 -22 28 -67 46 -101 19 -33 42
+-85 53 -116 10 -30 31 -73 45 -94 14 -22 35 -66 46 -98 11 -33 32 -80 47 -105
+15 -25 41 -78 59 -117 17 -39 40 -84 51 -100 11 -16 33 -54 48 -84 15 -30 33
+-62 40 -70 8 -8 28 -44 45 -79 17 -35 50 -92 73 -127 23 -34 65 -99 92 -144
+141 -228 169 -269 290 -437 143 -198 199 -273 254 -343 204 -258 207 -268 89
+-400 -94 -105 -349 -355 -418 -411 -25 -19 -101 -80 -169 -135 -69 -54 -137
+-108 -151 -119 -15 -11 -63 -49 -106 -84 -86 -69 -402 -282 -450 -302 -16 -7
+-54 -30 -85 -50 -30 -20 -72 -44 -93 -53 -21 -9 -64 -31 -95 -50 -31 -18 -74
+-39 -96 -46 -22 -7 -71 -29 -110 -50 -38 -21 -88 -43 -110 -50 -22 -7 -74 -30
+-115 -50 -41 -20 -93 -43 -115 -50 -22 -7 -70 -28 -106 -46 -37 -18 -108 -45
+-159 -59 -51 -14 -115 -37 -142 -51 -26 -13 -91 -33 -144 -44 -52 -11 -141
+-35 -197 -54 -57 -19 -144 -40 -197 -46 -52 -6 -144 -23 -203 -36 -176 -40
+-286 -53 -572 -69 -148 -8 -362 -22 -475 -31 -249 -20 -496 -11 -1050 36 -168
+15 -261 28 -385 55 -60 14 -175 34 -253 45 -153 21 -197 31 -277 59 -27 10
+-95 29 -150 41 -55 12 -124 33 -153 46 -29 13 -95 34 -147 48 -52 14 -120 38
+-152 55 -32 16 -92 39 -133 51 -41 12 -100 35 -130 51 -30 15 -82 38 -115 50
+-33 12 -73 31 -88 42 -16 10 -64 34 -107 52 -43 18 -91 42 -107 53 -15 10 -50
+31 -78 46 -27 15 -79 46 -115 71 -36 24 -93 64 -127 87 -35 24 -94 66 -132 93
+-37 28 -115 84 -172 125 -192 138 -587 550 -749 780 -40 58 -85 120 -99 139
+-26 34 -77 115 -128 204 -15 27 -42 72 -60 100 -40 65 -157 303 -173 354 -7
+21 -28 68 -46 104 -18 37 -42 104 -54 150 -12 46 -35 115 -52 153 -18 40 -39
+120 -53 195 -12 70 -32 157 -43 193 -31 98 -52 260 -60 452 -8 166 -8 169 -35
+191 -39 35 -78 36 -664 33 -533 -3 -533 -3 -560 -31 -28 -27 -28 -27 -28
+-1390 0 -1284 1 -1364 18 -1397 21 -43 210 -251 271 -300 25 -19 73 -57 108
+-84 35 -28 97 -79 138 -116 92 -80 135 -115 271 -216 176 -131 232 -170 268
+-188 18 -10 62 -36 96 -59 35 -23 100 -64 144 -92 45 -27 105 -65 134 -84 28
+-18 75 -45 102 -58 28 -14 64 -36 80 -48 17 -13 63 -40 104 -61 40 -22 116
+-61 167 -89 217 -116 362 -188 409 -202 27 -8 84 -32 125 -53 41 -20 100 -45
+130 -55 30 -9 78 -30 105 -45 28 -16 86 -38 130 -50 44 -12 102 -34 130 -48
+27 -13 93 -39 145 -57 52 -18 123 -44 157 -59 33 -14 96 -33 140 -42 43 -9
+113 -29 155 -45 42 -15 126 -37 185 -49 60 -11 146 -33 191 -50 45 -16 135
+-39 199 -50 65 -11 162 -34 216 -51 53 -16 146 -38 205 -49 59 -11 130 -26
+157 -34 91 -27 188 -44 375 -66 102 -12 235 -32 295 -45 141 -31 225 -42 410
+-55 83 -6 227 -22 320 -36 287 -42 306 -43 780 -54 327 -7 542 -7 740 0 291
+11 305 13 675 54 124 14 317 30 430 36 241 13 312 22 440 55 52 13 162 33 244
+44 83 12 189 34 242 51 51 16 146 39 211 51 64 11 153 34 196 50 44 15 121 38
+173 49 52 11 131 35 176 54 46 19 118 41 161 50 42 8 110 29 149 46 40 17 112
+40 161 51 48 10 114 32 145 48 32 16 86 39 122 50 35 12 86 34 114 50 28 15
+76 36 106 46 30 9 87 34 125 55 39 21 88 43 110 50 22 7 72 29 110 50 39 21
+93 45 121 54 28 9 72 30 98 46 26 17 68 41 94 54 26 13 70 39 99 57 28 19 93
+59 143 89 50 30 127 78 170 105 44 28 116 73 160 100 45 28 109 69 143 93 81
+55 176 102 207 102 25 0 147 -66 183 -98 21 -19 132 -81 247 -138 41 -21 94
+-50 117 -66 24 -16 62 -36 85 -44 24 -8 67 -29 97 -46 30 -17 84 -41 120 -55
+36 -13 93 -39 126 -58 33 -18 78 -38 100 -45 22 -7 74 -30 115 -50 41 -20 93
+-43 115 -50 22 -7 67 -27 101 -46 33 -18 96 -43 138 -54 43 -12 109 -35 146
+-51 38 -16 107 -38 154 -49 47 -11 125 -35 173 -54 49 -19 122 -41 163 -49 41
+-9 110 -30 153 -47 43 -17 124 -40 180 -51 56 -10 142 -32 192 -49 49 -16 133
+-37 185 -45 52 -9 176 -31 275 -50 173 -32 240 -41 479 -65 61 -6 169 -22 240
+-35 160 -29 263 -40 521 -57 372 -24 1796 -6 2105 26 165 18 653 72 773 86 48
+6 165 26 260 44 95 19 226 41 292 50 66 9 163 30 215 46 52 17 147 40 210 51
+63 11 167 35 230 54 63 19 144 39 180 46 36 6 119 28 185 49 66 22 161 46 210
+55 50 9 122 29 160 44 39 16 111 41 160 56 50 15 108 37 130 50 22 13 76 33
+120 45 44 12 109 37 145 55 36 18 90 40 120 50 30 10 80 32 110 50 30 18 73
+38 95 45 22 7 67 27 100 45 33 19 90 45 127 58 36 14 83 37 104 51 22 14 66
+35 98 46 33 11 80 33 105 49 25 16 71 39 101 50 30 12 84 39 120 61 36 22 70
+40 76 40 6 0 35 17 65 38 30 21 79 52 109 68 68 38 173 102 265 162 120 78
+199 129 231 148 17 11 66 46 109 79 42 33 97 75 122 92 24 18 87 67 139 110
+53 43 115 94 138 113 182 149 347 307 425 409 26 34 26 34 29 1370 2 985 0
+1347 -9 1378 -23 83 20 78 -613 78 -695 0 -640 19 -656 -221 -16 -231 -38
+-383 -69 -484 -16 -52 -37 -136 -46 -187 -17 -98 -31 -147 -63 -210 -11 -22
+-30 -77 -41 -122 -12 -46 -34 -107 -50 -135 -16 -28 -36 -75 -46 -104 -15 -48
+-69 -158 -200 -407 -48 -93 -126 -220 -176 -287 -19 -25 -61 -84 -94 -129
+-149 -205 -486 -565 -645 -689 -147 -115 -328 -247 -435 -318 -61 -39 -128
+-84 -150 -100 -52 -37 -246 -140 -298 -158 -22 -8 -61 -27 -86 -42 -25 -16
+-72 -38 -104 -50 -31 -12 -85 -36 -119 -53 -35 -18 -87 -40 -117 -50 -30 -11
+-79 -33 -108 -49 -29 -17 -92 -41 -140 -55 -49 -14 -122 -39 -163 -54 -41 -16
+-102 -34 -135 -41 -33 -7 -109 -28 -168 -46 -63 -20 -160 -40 -230 -49 -67 -9
+-183 -29 -257 -45 -197 -42 -233 -46 -647 -79 -313 -25 -600 -34 -749 -22 -82
+6 -293 20 -469 31 -299 18 -329 21 -458 54 -75 19 -202 44 -282 56 -82 11
+-192 35 -255 55 -60 19 -140 40 -177 46 -38 6 -111 27 -163 45 -52 19 -139 43
+-192 54 -54 10 -123 32 -155 48 -32 16 -83 37 -113 47 -30 10 -86 34 -125 53
+-38 19 -95 43 -125 54 -30 10 -72 30 -94 44 -21 14 -68 37 -105 50 -36 14 -96
+43 -132 65 -36 21 -70 39 -75 39 -6 0 -32 14 -60 31 -27 18 -77 47 -112 66
+-35 19 -82 47 -105 64 -23 17 -92 63 -153 103 -61 41 -146 102 -189 137 -43
+35 -105 86 -139 112 -200 157 -242 191 -408 344 -235 214 -235 215 -93 398 33
+43 75 98 93 124 18 25 61 87 97 136 182 252 332 495 510 828 29 53 57 103 63
+110 6 6 20 36 32 66 11 30 31 68 42 84 12 16 35 62 52 101 18 39 44 91 58 116
+15 25 37 72 49 105 12 33 37 87 55 120 17 33 40 85 49 115 10 30 28 74 42 96
+13 23 36 79 52 125 15 46 39 107 53 134 14 28 36 84 48 125 12 41 33 94 46
+117 13 23 35 83 49 134 13 51 40 131 59 178 19 48 40 113 46 145 7 33 27 99
+46 146 18 48 42 129 54 180 11 52 33 128 50 170 16 43 39 130 50 194 11 65 34
+159 50 211 17 51 38 142 46 202 9 59 32 169 51 243 19 74 43 204 54 289 11 85
+31 203 44 263 14 60 32 168 40 241 8 72 30 278 50 457 49 448 53 496 65 825
+24 678 -3 1679 -55 2085 -7 58 -21 188 -29 290 -33 371 -47 497 -72 610 -14
+63 -33 187 -44 275 -10 88 -34 223 -53 300 -19 77 -40 181 -47 230 -12 94 -38
+208 -65 285 -9 25 -25 98 -36 163 -11 65 -33 155 -50 200 -16 45 -39 123 -49
+174 -11 50 -33 127 -49 170 -17 43 -40 118 -51 167 -11 49 -33 118 -49 155
+-16 36 -39 104 -51 151 -12 47 -37 119 -55 160 -18 41 -41 102 -50 135 -10 33
+-31 86 -47 118 -16 33 -38 88 -50 125 -11 36 -37 99 -59 141 -21 42 -39 83
+-39 92 0 8 -18 53 -41 100 -22 46 -52 112 -65 147 -13 35 -33 76 -44 92 -12
+16 -34 60 -49 98 -16 37 -40 87 -55 110 -14 23 -36 65 -47 94 -11 28 -28 63
+-38 77 -10 14 -39 64 -63 111 -61 115 -137 253 -181 325 -20 33 -54 88 -74
+123 -35 58 -150 234 -233 356 -29 42 -133 184 -226 307 -10 14 -67 90 -127
+169 -59 79 -110 154 -113 166 -11 42 44 114 230 300 384 383 473 458 836 700
+63 43 133 90 155 106 22 15 63 40 90 54 28 15 69 40 93 56 23 16 64 39 90 50
+26 11 60 30 77 42 16 11 66 40 110 62 44 23 139 72 210 108 72 37 166 78 210
+91 45 13 103 35 130 49 28 13 92 36 144 51 52 14 116 37 142 51 27 13 88 34
+137 45 48 11 132 36 187 54 55 19 145 42 200 50 55 9 161 31 235 49 79 20 176
+37 235 41 136 9 309 30 495 61 154 26 158 26 550 21 430 -7 596 -16 795 -46
+72 -11 166 -22 210 -26 166 -13 264 -27 375 -55 63 -16 179 -38 257 -49 96
+-13 166 -29 215 -49 41 -16 110 -38 153 -47 44 -10 125 -34 180 -55 55 -21
+127 -45 159 -55 33 -9 85 -29 116 -45 31 -16 83 -36 116 -45 58 -17 137 -52
+359 -161 61 -30 115 -54 120 -54 6 0 30 -14 55 -31 25 -16 72 -44 105 -61 33
+-17 74 -41 90 -53 17 -13 48 -32 71 -43 47 -24 183 -121 265 -190 188 -158
+237 -201 360 -315 75 -69 162 -159 193 -199 31 -40 79 -100 106 -133 171 -204
+340 -444 405 -576 19 -39 43 -82 54 -95 11 -14 30 -51 41 -82 12 -31 34 -79
+49 -107 15 -27 36 -75 46 -105 10 -30 33 -86 52 -123 19 -38 43 -105 54 -149
+11 -43 31 -105 45 -136 34 -74 41 -100 59 -204 9 -48 29 -130 45 -183 37 -119
+69 -350 72 -518 3 -126 4 -129 30 -152 40 -35 78 -36 665 -33 532 3 532 3 555
+26 23 23 23 23 26 1388 1 947 -1 1379 -9 1408 -16 62 -350 385 -545 525 -104
+75 -136 99 -218 164 -34 26 -86 65 -116 87 -30 22 -87 64 -127 93 -211 153
+-333 232 -463 300 -41 21 -81 44 -88 49 -7 6 -56 33 -110 61 -53 27 -137 71
+-187 97 -49 26 -128 67 -175 92 -47 24 -101 54 -121 66 -20 12 -68 33 -108 47
+-40 13 -88 34 -106 45 -19 11 -72 34 -118 49 -47 16 -105 40 -129 54 -23 14
+-77 35 -118 47 -41 12 -93 32 -115 45 -22 12 -80 35 -130 50 -49 15 -115 40
+-146 56 -32 15 -88 36 -125 45 -38 10 -103 32 -146 50 -42 18 -118 41 -170 52
+-52 11 -135 36 -186 56 -50 20 -97 36 -104 36 -17 0 -204 44 -298 70 -41 11
+-133 30 -205 41 -71 10 -180 33 -241 49 -61 17 -175 39 -254 50 -78 11 -208
+35 -289 54 -138 33 -237 47 -901 123 -167 19 -1807 28 -2195 12z m-4480 -6642
+c7 -18 21 -72 30 -120 9 -48 29 -126 46 -174 16 -49 39 -139 50 -201 11 -62
+33 -156 50 -207 16 -52 39 -156 50 -232 11 -76 33 -193 49 -260 17 -68 39
+-196 49 -285 11 -90 33 -242 50 -338 32 -189 46 -306 56 -470 3 -58 13 -166
+21 -240 109 -1025 117 -2475 19 -3245 -14 -104 -32 -273 -40 -375 -18 -207
+-36 -340 -65 -472 -11 -49 -26 -153 -35 -231 -9 -78 -31 -203 -50 -277 -18
+-74 -41 -184 -50 -245 -20 -136 -20 -139 -56 -253 -16 -51 -36 -134 -45 -185
+-20 -124 -48 -205 -85 -250 -59 -71 -95 -37 -123 118 -9 53 -30 133 -47 177
+-16 45 -38 132 -49 194 -10 61 -32 156 -49 210 -17 55 -41 164 -52 244 -12 80
+-31 186 -44 235 -30 116 -42 186 -55 315 -6 58 -26 197 -45 310 -37 227 -51
+341 -60 505 -4 61 -11 151 -16 200 -55 506 -67 739 -79 1505 -13 890 2 1315
+60 1755 11 83 26 233 35 335 18 216 27 282 65 485 15 83 33 200 40 260 6 61
+28 184 50 275 21 91 41 190 45 220 10 92 25 161 56 257 15 50 38 145 49 210
+38 216 133 351 175 250z"/>
+</g></svg><div><b>CALDAS &amp; CALDAS</b><span>PEDIATRIA E CLÍNICA DE VACINAÇÃO</span></div></a>
+    <a class="btn btn-mini" href="#oferta">Comprar</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="rotulo">Dr. Daniel Caldas · Pediatra</span>
+    <h1>Da Introdução Alimentar <span>à Mesa da Família</span></h1>
+    <p class="sub">O livro que eu escrevi para os pais que atendo no consultório. Tudo o que vocês precisam saber para alimentar o bebê dos 6 aos 24 meses, com as receitas para colocar em prática.</p>
+    <div class="vsl">
+      <div class="vsl-vazio"><span class="play"></span><small>Vídeo</small></div>
+    </div>
+    <a class="btn" href="#oferta">Quero o livro</a>
+    <p class="ficha"><b>40 capítulos</b> · 8 módulos · 6 a 24 meses · + 7 materiais de receitas</p>
+  </div>
+</section>
+
+<section class="perguntas">
+  <div class="wrap">
+    <div>
+      <span class="rotulo">No consultório</span>
+      <h2>O que os pais mais me perguntam quando o bebê faz 6 meses</h2>
+    </div>
+    <div>
+      <ul class="balao">
+        <li>“Ele faz careta e cospe tudo. Paro?”</li>
+        <li>“Pode dar ovo? E peixe?”</li>
+        <li>“Engasgou ou foi só ânsia?”</li>
+        <li>“Papinha ou BLW, qual é melhor?”</li>
+        <li>“Quanto ele tem que comer por refeição?”</li>
+        <li>“A avó deu suco. Tem problema?”</li>
+        <li>“Pode sal? E açúcar no bolo de aniversário?”</li>
+      </ul>
+      <p style="margin-top:24px">São dúvidas normais, e quase sempre chegam junto com culpa. Cada uma tem resposta no livro, explicada do jeito que eu explico na consulta, sem termos difíceis.</p>
+      <p><b>Não é um método rígido.</b> É orientação para você ter segurança na hora de oferecer e saber quando vale procurar ajuda.</p>
+    </div>
+  </div>
+</section>
+
+<section class="kit">
+  <div class="wrap">
+    <span class="rotulo">Junto com o livro</span>
+    <h2>Receitas e guias para o dia a dia</h2>
+    <p class="lead">O livro explica o porquê. Estes materiais resolvem o “o que eu faço hoje no almoço”.</p>
+    <div class="grid-kit">
+      <div class="item"><div class="capa"><img src="img/calendario.jpg" alt="Capa: Calendário de Receitas" loading="lazy"></div><h3>Calendário de Receitas</h3><p>O que oferecer em cada semana</p><span class="pg">74 páginas</span></div>
+      <div class="item"><div class="capa"><img src="img/receitas.jpg" alt="Capa: Crescendo Saudável" loading="lazy"></div><h3>Crescendo Saudável</h3><p>204 receitas para bebês de 6 meses a 3 anos</p><span class="pg">145 páginas</span></div>
+      <div class="item"><div class="capa"><img src="img/blw.jpg" alt="Capa: Cortes Seguros no BLW" loading="lazy"></div><h3>Cortes Seguros no BLW</h3><p>Como cortar cada alimento em cada idade</p><span class="pg">Guia</span></div>
+      <div class="item"><div class="capa"><img src="img/congela.jpg" alt="Capa: Congelamento Prático" loading="lazy"></div><h3>Congelamento Prático</h3><p>Prepare a semana e ganhe tempo</p><span class="pg">Guia</span></div>
+      <div class="item"><div class="capa"><img src="img/temperos.jpg" alt="Capa: Temperos Seguros" loading="lazy"></div><h3>Temperos Seguros</h3><p>Sabor de verdade, sem sal em excesso</p><span class="pg">Guia</span></div>
+      <div class="item"><div class="capa"><img src="img/sorvetes.jpg" alt="Capa: 20 Sorvetes para Bebês" loading="lazy"></div><h3>20 Sorvetes para Bebês</h3><p>Picolés de fruta sem açúcar</p><span class="pg">Receitas</span></div>
+      <div class="item"><div class="capa"><img src="img/bolinhos.jpg" alt="Capa: 20 Bolinhos para Bebês" loading="lazy"></div><h3>20 Bolinhos para Bebês</h3><p>Lanches práticos e saudáveis</p><span class="pg">Receitas</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre">
+  <div class="wrap">
+    <div class="foto-dr">FOTO DO DR. DANIEL<br>img/dr-daniel.jpg</div>
+    <div>
+      <span class="rotulo">Quem escreveu</span>
+      <h2>Dr. Daniel Caldas</h2>
+      <div class="espec">Médico Pediatra</div>
+      <div class="credenciais">
+        <span>CRM-GO <b>12.195</b></span>
+        <span>RQE <b>8.175</b></span>
+        <span><b>Caldas &amp; Caldas</b> Pediatria e Clínica de Vacinação</span>
+      </div>
+      <p>Atende crianças e famílias na Caldas &amp; Caldas. O livro reúne as orientações que ele repete toda semana no consultório, com base nas recomendações da Sociedade Brasileira de Pediatria e do Guia Alimentar do Ministério da Saúde.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="aviso">
+      <h3>Antes de comprar</h3>
+      <p>O livro é educativo e não substitui a consulta. Se o bebê nasceu prematuro, tem alergia diagnosticada, dificuldade para engolir ou não está ganhando peso, a introdução alimentar precisa ser orientada individualmente pelo pediatra dele.</p>
+    </div>
+  </div>
+</section>
+
+<section class="oferta" id="oferta">
+  <div class="wrap">
+    <div class="caixa">
+      <span class="rotulo">Acesso imediato por e-mail</span>
+      <h2>Livro + materiais de receitas</h2>
+      <ul>
+        <li>Livro Da Introdução Alimentar à Mesa da Família</li>
+        <li>Calendário de Receitas, semana a semana</li>
+        <li>Crescendo Saudável, com 204 receitas</li>
+        <li>Guias de Cortes Seguros no BLW, Congelamento e Temperos</li>
+        <li>20 receitas de Sorvetes e 20 de Bolinhos para bebês</li>
+      </ul>
+      <div class="preco">
+        <div class="de">de R$ 297,00</div>
+        <div class="por">R$ 97</div>
+        <div class="parc">ou 12x de R$ 9,74 no cartão</div>
+      </div>
+      <a class="btn" href="#CHECKOUT">Comprar agora</a>
+      <p class="pagto">Pix, cartão ou boleto. Os arquivos chegam no seu e-mail em PDF.</p>
+    </div>
+    <p class="garantia"><b>Garantia de 7 dias.</b> Se não fizer sentido para a sua família, é só pedir o reembolso nesse prazo.</p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <div style="height:20px"></div>
+    <details><summary>Com que idade posso usar?</summary><p>O conteúdo vai dos 6 aos 24 meses. Vale começar a ler algumas semanas antes dos 6 meses, para se preparar com calma.</p></details>
+    <details><summary>É livro físico?</summary><p>Não, é digital, em PDF. Dá para ler no celular, no tablet ou no computador, e imprimir se preferir.</p></details>
+    <details><summary>Serve para quem vai fazer BLW? E papinha?</summary><p>Serve para os dois. O livro explica a oferta com colher, o BLW, o BLISS e a forma mista, e você escolhe o que funciona na sua casa.</p></details>
+    <details><summary>Substitui a consulta?</summary><p>Não. É um material de apoio para usar junto com o acompanhamento do pediatra do seu filho.</p></details>
+    <details><summary>Por quanto tempo tenho acesso?</summary><p>Os arquivos são seus. Depois de baixar, pode consultar quando quiser, inclusive para um próximo filho.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="marca" href="#"><svg viewBox="0 0 2630.000000 2220.000000" aria-hidden="true"><g transform="translate(0.000000,2220.000000) scale(0.100000,-0.100000)"
+fill="currentColor" stroke="none">
+<path d="M17655 21789 c-160 -7 -260 -17 -420 -43 -115 -19 -239 -38 -275 -41
+-123 -11 -215 -27 -355 -60 -77 -18 -194 -40 -261 -49 -67 -9 -166 -28 -220
+-42 -54 -14 -157 -36 -229 -49 -75 -13 -163 -36 -209 -54 -44 -17 -120 -41
+-169 -52 -50 -11 -121 -33 -159 -50 -37 -16 -106 -41 -153 -54 -48 -14 -108
+-36 -135 -50 -27 -14 -84 -34 -127 -46 -43 -12 -103 -34 -133 -49 -31 -16 -89
+-38 -130 -51 -41 -12 -102 -35 -135 -52 -33 -16 -87 -38 -120 -49 -33 -11 -72
+-29 -87 -39 -15 -11 -62 -36 -104 -55 -43 -19 -90 -44 -106 -55 -15 -11 -56
+-32 -91 -46 -34 -14 -75 -35 -92 -47 -16 -11 -66 -40 -110 -62 -246 -127 -278
+-145 -432 -243 -39 -25 -114 -73 -165 -105 -51 -33 -116 -77 -143 -97 -90 -67
+-166 -69 -259 -6 -28 19 -66 42 -85 52 -18 9 -61 35 -96 58 -34 23 -86 56
+-115 72 -83 48 -130 75 -200 116 -36 21 -92 48 -125 60 -33 12 -77 33 -98 46
+-21 13 -70 35 -110 49 -40 15 -94 39 -122 54 -27 15 -84 38 -125 50 -41 12
+-100 35 -130 50 -30 15 -89 38 -130 50 -41 12 -100 35 -131 50 -30 16 -84 36
+-120 45 -35 9 -98 32 -140 51 -42 19 -112 43 -156 54 -44 11 -110 32 -149 48
+-38 16 -105 37 -149 46 -44 10 -127 33 -185 51 -63 20 -164 42 -251 54 -81 11
+-199 34 -264 51 -65 16 -172 37 -239 46 -132 17 -177 25 -276 48 -146 34 -445
+66 -810 86 -102 5 -304 17 -450 27 -385 24 -1110 15 -1442 -17 -54 -6 -142
+-14 -195 -20 -54 -5 -188 -14 -298 -20 -250 -14 -333 -23 -465 -56 -58 -14
+-167 -34 -244 -44 -76 -11 -204 -35 -285 -54 -80 -19 -186 -40 -236 -46 -49
+-6 -151 -27 -225 -46 -74 -19 -192 -44 -263 -55 -76 -11 -161 -32 -206 -49
+-42 -16 -123 -40 -181 -54 -58 -14 -133 -36 -168 -51 -34 -14 -101 -34 -149
+-46 -48 -11 -121 -35 -163 -54 -41 -18 -97 -39 -125 -46 -27 -7 -88 -29 -135
+-49 -47 -21 -112 -46 -144 -55 -33 -9 -89 -31 -125 -50 -36 -18 -93 -40 -126
+-50 -33 -9 -82 -29 -110 -45 -27 -15 -75 -35 -105 -45 -49 -15 -215 -90 -295
+-133 -51 -28 -215 -113 -314 -164 -52 -26 -101 -54 -110 -62 -9 -7 -43 -28
+-76 -46 -33 -18 -73 -43 -90 -55 -16 -12 -50 -32 -75 -45 -25 -12 -67 -37 -95
+-55 -27 -17 -90 -58 -140 -89 -235 -149 -361 -237 -554 -385 -18 -14 -52 -39
+-75 -55 -169 -120 -503 -431 -542 -506 -18 -34 -19 -90 -19 -1397 0 -1362 0
+-1362 23 -1385 23 -23 23 -23 575 -26 584 -3 623 -2 659 27 21 18 23 28 30
+202 10 249 24 367 59 474 15 50 37 134 48 188 11 54 33 128 50 165 17 37 40
+103 51 147 12 44 34 103 49 130 15 28 36 75 46 105 10 30 38 92 61 138 24 46
+44 89 44 96 0 7 18 40 39 73 21 33 49 82 61 109 11 27 36 72 54 99 18 28 45
+70 60 95 15 25 52 79 82 120 30 41 73 102 96 134 95 137 549 607 708 733 151
+120 179 141 267 198 83 55 114 74 237 144 22 13 64 37 91 54 120 74 476 253
+540 272 32 9 85 30 118 46 32 17 97 41 143 55 47 13 113 36 146 50 34 14 101
+34 149 45 49 10 121 32 161 48 91 35 96 36 246 56 67 9 173 29 235 45 110 28
+182 38 422 61 66 6 156 17 200 25 123 22 557 44 880 44 274 0 300 -2 474 -30
+101 -16 258 -36 350 -45 211 -19 223 -21 361 -55 63 -16 160 -36 215 -45 55
+-9 145 -31 200 -50 55 -19 140 -44 188 -55 48 -11 109 -31 136 -44 26 -14 90
+-37 141 -51 51 -14 118 -39 150 -55 31 -16 85 -36 121 -45 66 -17 264 -109
+334 -155 22 -15 69 -41 105 -58 58 -29 124 -65 299 -167 105 -60 228 -142 391
+-257 41 -29 92 -63 113 -76 102 -60 627 -541 663 -607 27 -51 23 -60 -128
+-263 -163 -218 -213 -288 -252 -352 -15 -25 -41 -66 -59 -92 -18 -26 -57 -88
+-87 -138 -30 -50 -70 -115 -89 -143 -18 -29 -43 -72 -54 -97 -11 -25 -32 -63
+-47 -85 -15 -22 -43 -71 -62 -110 -99 -197 -144 -284 -155 -296 -6 -8 -23 -43
+-37 -79 -15 -36 -38 -82 -52 -104 -14 -21 -36 -66 -49 -100 -13 -33 -42 -99
+-64 -145 -23 -47 -41 -92 -41 -100 0 -9 -20 -54 -44 -101 -24 -47 -51 -111
+-60 -142 -9 -31 -31 -87 -50 -125 -18 -37 -39 -90 -46 -118 -7 -27 -28 -82
+-46 -121 -19 -39 -43 -109 -55 -155 -11 -46 -34 -114 -50 -150 -16 -37 -37
+-105 -48 -152 -11 -46 -33 -118 -50 -158 -16 -41 -36 -112 -46 -159 -9 -47
+-33 -127 -51 -179 -19 -52 -43 -144 -54 -206 -11 -61 -33 -156 -50 -211 -17
+-54 -40 -156 -50 -226 -11 -71 -33 -179 -50 -240 -17 -63 -39 -186 -50 -278
+-11 -91 -30 -217 -44 -280 -29 -137 -42 -228 -56 -411 -5 -74 -26 -268 -45
+-430 -53 -447 -61 -688 -46 -1509 12 -713 17 -830 51 -1145 11 -104 27 -283
+35 -397 16 -226 36 -380 66 -528 11 -52 28 -174 39 -271 12 -101 35 -235 54
+-315 19 -76 41 -191 50 -254 9 -64 31 -167 50 -230 18 -63 41 -162 51 -219 9
+-58 30 -142 46 -187 16 -46 38 -127 49 -181 11 -54 34 -133 51 -176 16 -43 39
+-117 50 -164 11 -48 36 -123 54 -167 18 -45 38 -108 45 -141 6 -33 28 -95 47
+-138 19 -43 43 -109 54 -145 10 -37 32 -92 48 -124 17 -31 38 -83 47 -115 9
+-32 36 -96 59 -143 23 -47 48 -103 55 -125 7 -22 28 -67 46 -101 19 -33 42
+-85 53 -116 10 -30 31 -73 45 -94 14 -22 35 -66 46 -98 11 -33 32 -80 47 -105
+15 -25 41 -78 59 -117 17 -39 40 -84 51 -100 11 -16 33 -54 48 -84 15 -30 33
+-62 40 -70 8 -8 28 -44 45 -79 17 -35 50 -92 73 -127 23 -34 65 -99 92 -144
+141 -228 169 -269 290 -437 143 -198 199 -273 254 -343 204 -258 207 -268 89
+-400 -94 -105 -349 -355 -418 -411 -25 -19 -101 -80 -169 -135 -69 -54 -137
+-108 -151 -119 -15 -11 -63 -49 -106 -84 -86 -69 -402 -282 -450 -302 -16 -7
+-54 -30 -85 -50 -30 -20 -72 -44 -93 -53 -21 -9 -64 -31 -95 -50 -31 -18 -74
+-39 -96 -46 -22 -7 -71 -29 -110 -50 -38 -21 -88 -43 -110 -50 -22 -7 -74 -30
+-115 -50 -41 -20 -93 -43 -115 -50 -22 -7 -70 -28 -106 -46 -37 -18 -108 -45
+-159 -59 -51 -14 -115 -37 -142 -51 -26 -13 -91 -33 -144 -44 -52 -11 -141
+-35 -197 -54 -57 -19 -144 -40 -197 -46 -52 -6 -144 -23 -203 -36 -176 -40
+-286 -53 -572 -69 -148 -8 -362 -22 -475 -31 -249 -20 -496 -11 -1050 36 -168
+15 -261 28 -385 55 -60 14 -175 34 -253 45 -153 21 -197 31 -277 59 -27 10
+-95 29 -150 41 -55 12 -124 33 -153 46 -29 13 -95 34 -147 48 -52 14 -120 38
+-152 55 -32 16 -92 39 -133 51 -41 12 -100 35 -130 51 -30 15 -82 38 -115 50
+-33 12 -73 31 -88 42 -16 10 -64 34 -107 52 -43 18 -91 42 -107 53 -15 10 -50
+31 -78 46 -27 15 -79 46 -115 71 -36 24 -93 64 -127 87 -35 24 -94 66 -132 93
+-37 28 -115 84 -172 125 -192 138 -587 550 -749 780 -40 58 -85 120 -99 139
+-26 34 -77 115 -128 204 -15 27 -42 72 -60 100 -40 65 -157 303 -173 354 -7
+21 -28 68 -46 104 -18 37 -42 104 -54 150 -12 46 -35 115 -52 153 -18 40 -39
+120 -53 195 -12 70 -32 157 -43 193 -31 98 -52 260 -60 452 -8 166 -8 169 -35
+191 -39 35 -78 36 -664 33 -533 -3 -533 -3 -560 -31 -28 -27 -28 -27 -28
+-1390 0 -1284 1 -1364 18 -1397 21 -43 210 -251 271 -300 25 -19 73 -57 108
+-84 35 -28 97 -79 138 -116 92 -80 135 -115 271 -216 176 -131 232 -170 268
+-188 18 -10 62 -36 96 -59 35 -23 100 -64 144 -92 45 -27 105 -65 134 -84 28
+-18 75 -45 102 -58 28 -14 64 -36 80 -48 17 -13 63 -40 104 -61 40 -22 116
+-61 167 -89 217 -116 362 -188 409 -202 27 -8 84 -32 125 -53 41 -20 100 -45
+130 -55 30 -9 78 -30 105 -45 28 -16 86 -38 130 -50 44 -12 102 -34 130 -48
+27 -13 93 -39 145 -57 52 -18 123 -44 157 -59 33 -14 96 -33 140 -42 43 -9
+113 -29 155 -45 42 -15 126 -37 185 -49 60 -11 146 -33 191 -50 45 -16 135
+-39 199 -50 65 -11 162 -34 216 -51 53 -16 146 -38 205 -49 59 -11 130 -26
+157 -34 91 -27 188 -44 375 -66 102 -12 235 -32 295 -45 141 -31 225 -42 410
+-55 83 -6 227 -22 320 -36 287 -42 306 -43 780 -54 327 -7 542 -7 740 0 291
+11 305 13 675 54 124 14 317 30 430 36 241 13 312 22 440 55 52 13 162 33 244
+44 83 12 189 34 242 51 51 16 146 39 211 51 64 11 153 34 196 50 44 15 121 38
+173 49 52 11 131 35 176 54 46 19 118 41 161 50 42 8 110 29 149 46 40 17 112
+40 161 51 48 10 114 32 145 48 32 16 86 39 122 50 35 12 86 34 114 50 28 15
+76 36 106 46 30 9 87 34 125 55 39 21 88 43 110 50 22 7 72 29 110 50 39 21
+93 45 121 54 28 9 72 30 98 46 26 17 68 41 94 54 26 13 70 39 99 57 28 19 93
+59 143 89 50 30 127 78 170 105 44 28 116 73 160 100 45 28 109 69 143 93 81
+55 176 102 207 102 25 0 147 -66 183 -98 21 -19 132 -81 247 -138 41 -21 94
+-50 117 -66 24 -16 62 -36 85 -44 24 -8 67 -29 97 -46 30 -17 84 -41 120 -55
+36 -13 93 -39 126 -58 33 -18 78 -38 100 -45 22 -7 74 -30 115 -50 41 -20 93
+-43 115 -50 22 -7 67 -27 101 -46 33 -18 96 -43 138 -54 43 -12 109 -35 146
+-51 38 -16 107 -38 154 -49 47 -11 125 -35 173 -54 49 -19 122 -41 163 -49 41
+-9 110 -30 153 -47 43 -17 124 -40 180 -51 56 -10 142 -32 192 -49 49 -16 133
+-37 185 -45 52 -9 176 -31 275 -50 173 -32 240 -41 479 -65 61 -6 169 -22 240
+-35 160 -29 263 -40 521 -57 372 -24 1796 -6 2105 26 165 18 653 72 773 86 48
+6 165 26 260 44 95 19 226 41 292 50 66 9 163 30 215 46 52 17 147 40 210 51
+63 11 167 35 230 54 63 19 144 39 180 46 36 6 119 28 185 49 66 22 161 46 210
+55 50 9 122 29 160 44 39 16 111 41 160 56 50 15 108 37 130 50 22 13 76 33
+120 45 44 12 109 37 145 55 36 18 90 40 120 50 30 10 80 32 110 50 30 18 73
+38 95 45 22 7 67 27 100 45 33 19 90 45 127 58 36 14 83 37 104 51 22 14 66
+35 98 46 33 11 80 33 105 49 25 16 71 39 101 50 30 12 84 39 120 61 36 22 70
+40 76 40 6 0 35 17 65 38 30 21 79 52 109 68 68 38 173 102 265 162 120 78
+199 129 231 148 17 11 66 46 109 79 42 33 97 75 122 92 24 18 87 67 139 110
+53 43 115 94 138 113 182 149 347 307 425 409 26 34 26 34 29 1370 2 985 0
+1347 -9 1378 -23 83 20 78 -613 78 -695 0 -640 19 -656 -221 -16 -231 -38
+-383 -69 -484 -16 -52 -37 -136 -46 -187 -17 -98 -31 -147 -63 -210 -11 -22
+-30 -77 -41 -122 -12 -46 -34 -107 -50 -135 -16 -28 -36 -75 -46 -104 -15 -48
+-69 -158 -200 -407 -48 -93 -126 -220 -176 -287 -19 -25 -61 -84 -94 -129
+-149 -205 -486 -565 -645 -689 -147 -115 -328 -247 -435 -318 -61 -39 -128
+-84 -150 -100 -52 -37 -246 -140 -298 -158 -22 -8 -61 -27 -86 -42 -25 -16
+-72 -38 -104 -50 -31 -12 -85 -36 -119 -53 -35 -18 -87 -40 -117 -50 -30 -11
+-79 -33 -108 -49 -29 -17 -92 -41 -140 -55 -49 -14 -122 -39 -163 -54 -41 -16
+-102 -34 -135 -41 -33 -7 -109 -28 -168 -46 -63 -20 -160 -40 -230 -49 -67 -9
+-183 -29 -257 -45 -197 -42 -233 -46 -647 -79 -313 -25 -600 -34 -749 -22 -82
+6 -293 20 -469 31 -299 18 -329 21 -458 54 -75 19 -202 44 -282 56 -82 11
+-192 35 -255 55 -60 19 -140 40 -177 46 -38 6 -111 27 -163 45 -52 19 -139 43
+-192 54 -54 10 -123 32 -155 48 -32 16 -83 37 -113 47 -30 10 -86 34 -125 53
+-38 19 -95 43 -125 54 -30 10 -72 30 -94 44 -21 14 -68 37 -105 50 -36 14 -96
+43 -132 65 -36 21 -70 39 -75 39 -6 0 -32 14 -60 31 -27 18 -77 47 -112 66
+-35 19 -82 47 -105 64 -23 17 -92 63 -153 103 -61 41 -146 102 -189 137 -43
+35 -105 86 -139 112 -200 157 -242 191 -408 344 -235 214 -235 215 -93 398 33
+43 75 98 93 124 18 25 61 87 97 136 182 252 332 495 510 828 29 53 57 103 63
+110 6 6 20 36 32 66 11 30 31 68 42 84 12 16 35 62 52 101 18 39 44 91 58 116
+15 25 37 72 49 105 12 33 37 87 55 120 17 33 40 85 49 115 10 30 28 74 42 96
+13 23 36 79 52 125 15 46 39 107 53 134 14 28 36 84 48 125 12 41 33 94 46
+117 13 23 35 83 49 134 13 51 40 131 59 178 19 48 40 113 46 145 7 33 27 99
+46 146 18 48 42 129 54 180 11 52 33 128 50 170 16 43 39 130 50 194 11 65 34
+159 50 211 17 51 38 142 46 202 9 59 32 169 51 243 19 74 43 204 54 289 11 85
+31 203 44 263 14 60 32 168 40 241 8 72 30 278 50 457 49 448 53 496 65 825
+24 678 -3 1679 -55 2085 -7 58 -21 188 -29 290 -33 371 -47 497 -72 610 -14
+63 -33 187 -44 275 -10 88 -34 223 -53 300 -19 77 -40 181 -47 230 -12 94 -38
+208 -65 285 -9 25 -25 98 -36 163 -11 65 -33 155 -50 200 -16 45 -39 123 -49
+174 -11 50 -33 127 -49 170 -17 43 -40 118 -51 167 -11 49 -33 118 -49 155
+-16 36 -39 104 -51 151 -12 47 -37 119 -55 160 -18 41 -41 102 -50 135 -10 33
+-31 86 -47 118 -16 33 -38 88 -50 125 -11 36 -37 99 -59 141 -21 42 -39 83
+-39 92 0 8 -18 53 -41 100 -22 46 -52 112 -65 147 -13 35 -33 76 -44 92 -12
+16 -34 60 -49 98 -16 37 -40 87 -55 110 -14 23 -36 65 -47 94 -11 28 -28 63
+-38 77 -10 14 -39 64 -63 111 -61 115 -137 253 -181 325 -20 33 -54 88 -74
+123 -35 58 -150 234 -233 356 -29 42 -133 184 -226 307 -10 14 -67 90 -127
+169 -59 79 -110 154 -113 166 -11 42 44 114 230 300 384 383 473 458 836 700
+63 43 133 90 155 106 22 15 63 40 90 54 28 15 69 40 93 56 23 16 64 39 90 50
+26 11 60 30 77 42 16 11 66 40 110 62 44 23 139 72 210 108 72 37 166 78 210
+91 45 13 103 35 130 49 28 13 92 36 144 51 52 14 116 37 142 51 27 13 88 34
+137 45 48 11 132 36 187 54 55 19 145 42 200 50 55 9 161 31 235 49 79 20 176
+37 235 41 136 9 309 30 495 61 154 26 158 26 550 21 430 -7 596 -16 795 -46
+72 -11 166 -22 210 -26 166 -13 264 -27 375 -55 63 -16 179 -38 257 -49 96
+-13 166 -29 215 -49 41 -16 110 -38 153 -47 44 -10 125 -34 180 -55 55 -21
+127 -45 159 -55 33 -9 85 -29 116 -45 31 -16 83 -36 116 -45 58 -17 137 -52
+359 -161 61 -30 115 -54 120 -54 6 0 30 -14 55 -31 25 -16 72 -44 105 -61 33
+-17 74 -41 90 -53 17 -13 48 -32 71 -43 47 -24 183 -121 265 -190 188 -158
+237 -201 360 -315 75 -69 162 -159 193 -199 31 -40 79 -100 106 -133 171 -204
+340 -444 405 -576 19 -39 43 -82 54 -95 11 -14 30 -51 41 -82 12 -31 34 -79
+49 -107 15 -27 36 -75 46 -105 10 -30 33 -86 52 -123 19 -38 43 -105 54 -149
+11 -43 31 -105 45 -136 34 -74 41 -100 59 -204 9 -48 29 -130 45 -183 37 -119
+69 -350 72 -518 3 -126 4 -129 30 -152 40 -35 78 -36 665 -33 532 3 532 3 555
+26 23 23 23 23 26 1388 1 947 -1 1379 -9 1408 -16 62 -350 385 -545 525 -104
+75 -136 99 -218 164 -34 26 -86 65 -116 87 -30 22 -87 64 -127 93 -211 153
+-333 232 -463 300 -41 21 -81 44 -88 49 -7 6 -56 33 -110 61 -53 27 -137 71
+-187 97 -49 26 -128 67 -175 92 -47 24 -101 54 -121 66 -20 12 -68 33 -108 47
+-40 13 -88 34 -106 45 -19 11 -72 34 -118 49 -47 16 -105 40 -129 54 -23 14
+-77 35 -118 47 -41 12 -93 32 -115 45 -22 12 -80 35 -130 50 -49 15 -115 40
+-146 56 -32 15 -88 36 -125 45 -38 10 -103 32 -146 50 -42 18 -118 41 -170 52
+-52 11 -135 36 -186 56 -50 20 -97 36 -104 36 -17 0 -204 44 -298 70 -41 11
+-133 30 -205 41 -71 10 -180 33 -241 49 -61 17 -175 39 -254 50 -78 11 -208
+35 -289 54 -138 33 -237 47 -901 123 -167 19 -1807 28 -2195 12z m-4480 -6642
+c7 -18 21 -72 30 -120 9 -48 29 -126 46 -174 16 -49 39 -139 50 -201 11 -62
+33 -156 50 -207 16 -52 39 -156 50 -232 11 -76 33 -193 49 -260 17 -68 39
+-196 49 -285 11 -90 33 -242 50 -338 32 -189 46 -306 56 -470 3 -58 13 -166
+21 -240 109 -1025 117 -2475 19 -3245 -14 -104 -32 -273 -40 -375 -18 -207
+-36 -340 -65 -472 -11 -49 -26 -153 -35 -231 -9 -78 -31 -203 -50 -277 -18
+-74 -41 -184 -50 -245 -20 -136 -20 -139 -56 -253 -16 -51 -36 -134 -45 -185
+-20 -124 -48 -205 -85 -250 -59 -71 -95 -37 -123 118 -9 53 -30 133 -47 177
+-16 45 -38 132 -49 194 -10 61 -32 156 -49 210 -17 55 -41 164 -52 244 -12 80
+-31 186 -44 235 -30 116 -42 186 -55 315 -6 58 -26 197 -45 310 -37 227 -51
+341 -60 505 -4 61 -11 151 -16 200 -55 506 -67 739 -79 1505 -13 890 2 1315
+60 1755 11 83 26 233 35 335 18 216 27 282 65 485 15 83 33 200 40 260 6 61
+28 184 50 275 21 91 41 190 45 220 10 92 25 161 56 257 15 50 38 145 49 210
+38 216 133 351 175 250z"/>
+</g></svg><div><b>CALDAS &amp; CALDAS</b><span>PEDIATRIA E CLÍNICA DE VACINAÇÃO</span></div></a>
+    <p>Dr. Daniel Caldas · Médico Pediatra · CRM-GO 12.195 · RQE 8.175<br>Material educativo. Não substitui a consulta pediátrica. © 2026 Caldas &amp; Caldas</p>
+  </div>
+</footer>
+
+<div class="fixo"><a class="btn" href="#oferta">Comprar · R$ 97</a></div>
+
+</body>
+</html>
